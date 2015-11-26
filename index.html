@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.cbmcard.com/demo/HTML5/300111310/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2015 08:45:45 GMT -->
+<head>
+<title>Photographer, HTML5 photography website template ID: 300111310</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/jplayer.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/content_switch.js"></script>
+
+<script type="text/javascript" src="js/thumbvr.js"></script>
+
+<script type="text/javascript" src="js/cScroll.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="js/jquery.prettyPhoto.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+
+
+<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;z-index:100;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+		</div>
+	<![endif]-->
+<script type="text/javascript">                                     
+$(document).ready(function()
+{ $("#ajax-contact-form").submit(function() { var str = $(this).serialize(); $.ajax( { type: "POST", url: "contact.php", data: str, success: function(msg)
+						{ if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+							{ result = '<div class="notification_ok">Your message has been sent. Thank you!<br> <a href="#" onclick="freset();return false;">send another mail</a></div>'; $("#fields").hide(); } 							else
+							{ result = msg; } $("#note").html(result); } 
+				}); return false; }); });
+function freset()
+{ 	$("#note").html(''); 	document.getElementById('ajax-contact-form').reset(); 	$("#fields").show();}
+
+</script>
+</head>
+<body>
+<div class="spinner"></div>
+
+
+<div class="extra">
+
+<div class="main1">
+
+<div class="main2">
+<div class="top1">
+  <a href="index.html">www.amandaphotographer.com</a>
+</div>
+<div class="top2">
+
+<nav class="menu">
+					<ul id="menu">
+					  <li><a href="index.html"><span></span><strong>HOME</strong></a></li>
+                      <li><a href="#!/page_ABOUT"><span></span><strong>ABOUT ME</strong></a></li>
+                      <li><a href="#!/page_NEWS"><span></span><strong>NEWS</strong></a></li>
+                      <li><a href="#!/page_SERVICES"><span></span><strong>SERVICES</strong></a></li>
+                      <li><a href="#!/page_PORTFOLIO1"><span></span><strong>PORTFOLIO</strong></a>
+                      
+                      <div class="submenu">
+                                <ul>
+                                  <li><a href="#!/page_PORTFOLIO1"><span></span><p>Fashion</p></a></li>
+                                  <li><a href="#!/page_PORTFOLIO2"><span></span><p>Landscapes</p></a></li>
+                                  <li><a href="#!/page_PORTFOLIO3"><span></span><p>Architecture</p></a></li>
+                                  <li><a href="#!/page_VIDEO"><span></span><p>Video</p></a></li>
+                                </ul>
+                      </div>
+                      
+                      </li>
+                      <li><a href="#!/page_CONTACTS"><span></span><strong>CONTACTS</strong></a></li>
+        			</ul>
+</nav>
+
+</div>
+<div class="clear"></div>
+
+</div>
+<div class="main3"></div>
+<div class="main4">
+
+<div class="main5">
+
+<!--content -->
+			<article id="content">
+				<ul>
+                
+                  
+                  <li id="page_ABOUT">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Little About Me</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Nunc suscipit. Suspendisse enim arcu.</h3>
+                          <p class="text">
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc suscipit. Suspendisse enim arcu, convallis non, cursus sed, dignissim et, est. Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. 
+                     	  </p>
+                          <a href="#!/page_MORE" class="button1"><span></span><strong>MORE</strong></a>
+                          <h2>Biography</h2>
+                          <div>
+                          <div class="video1 left"> <a href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0" rel="prettyPhoto[mixed]" title="YouTube Demo"><img src="images/about01.jpg" ><img src="images/video1.jpg" class="img_act"><span></span></a></div>
+                          <strong class="color1">
+                    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc suscipit. Suspendisse enim arcu, convallis non,Nunc suscipit.  cursus sed, dignissim et, est.                   		  </strong>                    
+                          <p class="text">
+                          Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. 
+                          </p>
+                          <div class="clear"></div>
+                          </div>
+                          <img src="images/about02.jpg" class="border1 right img1">
+                          <p class="text">
+                          Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula,<a href="#"> arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. </a>
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat.
+                          </p>
+                          <p class="text">
+                          Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula,<a href="#"> arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. </a>
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat.
+                          </p>
+                          <p class="text">
+                          Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula,<a href="#"> arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. </a>
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat.
+                          </p>
+                          <p class="text">
+                          Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula,<a href="#"> arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. </a>
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat.
+                          </p>
+                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_NEWS">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Latest News</h2>
+                          <div>
+                          <div class="col1">
+                          <img src="images/news01.jpg" class="left border1 img2">
+                          <strong class="color1">
+                    	  Dorem ipsum dolor.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. 
+                          </p>
+                          <div class="clear"></div>
+                          </div>
+                          <div class="col1 pad_left1">
+                          <img src="images/news02.jpg" class="left border1 img2">
+                          <strong class="color1">
+                    	  Dorem ipsum dolor.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. 
+                          </p>
+                          <div class="clear"></div>
+                          </div>
+                          <div class="clear"></div>
+                          <div class="col1">
+                          <img src="images/news03.jpg" class="left border1 img2">
+                          <strong class="color1">
+                    	  Dorem ipsum dolor.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. 
+                          </p>
+                          <div class="clear"></div>
+                          </div>
+                          <div class="col1 pad_left1">
+                          <img src="images/news04.jpg" class="left border1 img2">
+                          <strong class="color1">
+                    	  Dorem ipsum dolor.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. 
+                          </p>
+                          <div class="clear"></div>
+                          </div>
+                          <div class="clear"></div>
+                          </div>
+                          
+                          <a href="#!/page_MORE" class="button1"><span></span><strong>MORE</strong></a>
+                          <h2>More News</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Nunc suscipit. Suspendisse enim arcu.</h3>
+                          <p class="text">
+               Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. 
+Curabitur nibh lectus, dapibus id, tempor eu, tempor non, .
+ Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+In pharetra ipsum condimentum elit. Suspendisse mattis turpis eget odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque tempus dictum urna. Sed consequat massa eget metus. Quisque mollis pretium nisl. Mauris venenatis porttitor risus. Phasellus accumsan turpis. Nam sagittis nulla quis orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae elit. In pharetra ipsum condimentum elit. Suspendisse mattis turpis eget odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque tempus dictum urna. Sed consequat massa eget metus. Quisque mollis pretium nisl. Mauris venenatis porttitor risus. Phasellus accumsan turpis. Nam sagittis nulla quis orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae elit. 
+                     	  </p>
+                          
+                          
+                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_SERVICES">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Services Overview</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Nunc suscipit. Suspendisse enim arcu.</h3>
+                          <p class="text">
+              Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat.
+                     	  </p>
+                          <a href="#!/page_MORE" class="button1"><span></span><strong>MORE</strong></a>
+                          <div>
+                          <div class="col2">
+                          
+                          <h2>Services List</h2>
+                          <ul>
+                              <li class="disk1"><a href="#">In ante velit, cursus ut, ultrices</a></li>
+                              <li class="disk1"><a href="#">Duis pulvinar. Vestibulum vel pede at </a></li>
+                              <li class="disk1"><a href="#">Asapien sodales mattis. Quisque preti</a></li>
+                              <li class="disk1"><a href="#">Fela, arcu libero consectetuer massa</a></li>
+                              <li class="disk1"><a href="#">In ante velit, cursus ut, ultrices</a></li>
+                              <li class="disk1"><a href="#">Duis pulvinar. Vestibulum vel pede at </a></li>
+                              <li class="disk1"><a href="#">Asapien sodales mattis. Quisque preti</a></li>
+                              <li class="disk1"><a href="#">Fela, arcu libero consectetuer massa</a></li>
+                              <li class="disk1"><a href="#">In ante velit, cursus ut, ultrices</a></li>
+                              <li class="disk1"><a href="#">Duis pulvinar. Vestibulum vel pede at </a></li>
+                              <li class="disk1"><a href="#">Asapien sodales mattis. Quisque preti</a></li>
+                              <li class="disk1"><a href="#">Fela, arcu libero consectetuer massa</a></li>
+                              <li class="disk1"><a href="#">In ante velit, cursus ut, ultrices</a></li>
+                              <li class="disk1"><a href="#">Duis pulvinar. Vestibulum vel pede at </a></li>
+                              <li class="disk1"><a href="#">Asapien sodales mattis. Quisque preti</a></li>
+                              <li class="disk1"><a href="#">Fela, arcu libero consectetuer massa</a></li>
+                              <li class="disk1"><a href="#">In ante velit, cursus ut, ultrices</a></li>
+                              <li class="disk1"><a href="#">Duis pulvinar. Vestibulum vel pede at </a></li>
+                             
+                              
+                    </ul>
+                          
+                          </div>
+                          <div class="col3 pad_left2">
+                          
+                          <h2>The Best Services</h2>
+                          <img src="images/services01.jpg" class="border1 img3">
+                          <strong class="color1">
+                    	  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          
+                          </div>
+                          <div class="clear"></div>
+                          
+                          </div>
+                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_PORTFOLIO1">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Gallery - Fashion</h2>
+                          
+                          <div class="col0">
+                          
+           <div class="photo2"><a href="images/gallery01_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery01.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery02_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery02.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery03_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery03.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery04_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery04.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery05_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery05.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery06_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery06.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery07_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery07.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery08_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery08.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery09_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery09.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery10_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery10.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery11_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery11.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery12_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery12.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery13_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery13.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery14_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery14.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery15_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery15.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery16_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery16.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery17_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery17.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery18_big.jpg" rel="prettyPhoto[pp_gal2]" title="Photo Title"><img src="images/gallery18.jpg"><span></span></a></div>
+           <div class="clear"></div>
+                          
+                          
+                          
+                          </div>                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_PORTFOLIO2">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Gallery - Landscapes</h2>
+                          
+                          <div class="col0">
+           <div class="photo2"><a href="images/gallery13_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery13.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery14_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery14.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery15_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery15.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery16_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery16.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery17_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery17.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery18_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery18.jpg"><span></span></a></div>
+           <div class="clear"></div>               
+           <div class="photo2"><a href="images/gallery01_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery01.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery02_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery02.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery03_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery03.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery04_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery04.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery05_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery05.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery06_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery06.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery07_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery07.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery08_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery08.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery09_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery09.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery10_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery10.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery11_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery11.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery12_big.jpg" rel="prettyPhoto[pp_gal3]" title="Photo Title"><img src="images/gallery12.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           
+                          
+                          
+                          
+                          </div>                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_PORTFOLIO3">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Gallery - Architecture</h2>
+                          
+                          <div class="col0">
+           <div class="photo2"><a href="images/gallery07_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery07.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery08_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery08.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery09_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery09.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery10_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery10.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery11_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery11.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery12_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery12.jpg"><span></span></a></div>
+           <div class="clear"></div>               
+           <div class="photo2"><a href="images/gallery13_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery13.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery14_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery14.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery15_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery15.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery16_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery16.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery17_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery17.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery18_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery18.jpg"><span></span></a></div>
+           <div class="clear"></div>               
+           <div class="photo2"><a href="images/gallery01_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery01.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery02_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery02.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery03_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery03.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           <div class="photo2"><a href="images/gallery04_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery04.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery05_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery05.jpg"><span></span></a></div>
+           <div class="photo2"><a href="images/gallery06_big.jpg" rel="prettyPhoto[pp_gal4]" title="Photo Title"><img src="images/gallery06.jpg"><span></span></a></div>
+           <div class="clear"></div>
+           
+           
+                          
+                          
+                          
+                          </div>                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_VIDEO">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                          <h2>Video</h2>
+                          
+                          <div class="col0">
+          
+          
+           <div class="vid2">
+           <div class="video2"><a href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0" rel="prettyPhoto[video2]" title="YouTube Demo"><img src="images/video01.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+           
+           <div class="vid2 pad_left3">
+           <div class="video2"><a href="http://vimeo.com/7874398&amp;width=700" rel="prettyPhoto[video2]" title="Vimeo Demo"><img src="images/video02.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+          
+           <div class="clear"></div>
+           
+           <div class="vid2">
+           <div class="video2"><a href="http://trailers.apple.com/movies/disney/tronlegacy/tronlegacy-tsr1_r640s.mov?width=640&amp;height=272" rel="prettyPhoto[video2]" title="Quicktime Demo"><img src="images/video03.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+           
+           <div class="vid2 pad_left3">
+           <div class="video2"><a href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0" rel="prettyPhoto[video2]" title="YouTube Demo"><img src="images/video04.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+          
+           <div class="clear"></div>
+           <div class="vid2">
+           <div class="video2"><a href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0" rel="prettyPhoto[video2]" title="YouTube Demo"><img src="images/video01.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+           
+           <div class="vid2 pad_left3">
+           <div class="video2"><a href="http://vimeo.com/7874398&amp;width=700" rel="prettyPhoto[video2]" title="Vimeo Demo"><img src="images/video02.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+          
+           <div class="clear"></div>
+           
+           <div class="vid2">
+           <div class="video2"><a href="http://trailers.apple.com/movies/disney/tronlegacy/tronlegacy-tsr1_r640s.mov?width=640&amp;height=272" rel="prettyPhoto[video2]" title="Quicktime Demo"><img src="images/video03.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+           
+           <div class="vid2 pad_left3">
+           <div class="video2"><a href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0" rel="prettyPhoto[video2]" title="YouTube Demo"><img src="images/video04.jpg"><span></span></a></div>
+           <strong class="color1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong>
+           </div>
+          
+           <div class="clear"></div>
+           
+           
+                          
+                          
+                          
+                          </div>                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_CONTACTS">                  
+                      <div class="box">
+                          <div class="relative">
+                          
+                          
+                          
+                          
+                          <div class="col4">
+                          
+          					<div class="cf">
+                            <h2>Contact form</h2>
+                            <div id="note"></div>
+							<div id="fields">
+							<form id="ajax-contact-form" action="javascript:alert('success!');">
+								<div class="clear"></div>
+						
+							<div class="left">
+                            <label>Your full name:</label><br>
+							  <INPUT class="textbox" type="text" name="name" value="">
+									<div class="clear"></div>
+						
+							<label >E-Mail:</label><br>
+								<INPUT class="textbox" type="text" name="email" value="">
+								  <div class="clear"></div>
+	
+							<label >Phone Number:</label><br>
+								<INPUT class="textbox" type="text" name="phone" value="">
+									<div class="clear"></div>
+                            </div>
+								<div class="left pad_left1">
+                                <label >Message:</label><br>
+								  <TEXTAREA class="textbox" NAME="content" ROWS="5" COLS="25"></TEXTAREA>
+									 <div class="clear"></div>
+									 
+								<label>Security Code:</label><br>
+									<div class="clear"></div>
+									  
+								 <INPUT class="textbox" type="text" name="capthca" value="" style=" width:130px; float:left;margin-top:2px">
+                                  <img src="captcha/captcha.html" style="width:100px; height:32px; float:left; margin-left:10px; margin-top:3px">
+									<div class="clear"></div> 
+                                </div>  
+									
+							  <div class="clear"></div> 
+	
+								 <INPUT class="pinn" type="submit" name="submit" value="submit">    
+						 </form>
+                </div>
+                            
+                            
+                            </div>
+                            
+                            <div>
+                            <h2>Contact Address</h2>
+                            <div class="gmap left">
+<iframe width="400" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Glasgow,&amp;aq=&amp;sll=46.975033,31.994583&amp;sspn=0.368248,0.617294&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Glasgow,+Glasgow+City,+United+Kingdom&amp;t=m&amp;ll=55.866932,-4.256344&amp;spn=0.020324,0.070896&amp;z=13&amp;output=embed"></iframe><br /><span><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Glasgow,&amp;aq=&amp;sll=46.975033,31.994583&amp;sspn=0.368248,0.617294&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Glasgow,+Glasgow+City,+United+Kingdom&amp;t=m&amp;ll=55.866932,-4.256344&amp;spn=0.020324,0.070896&amp;z=13">View Larger Map</a></span>
+</div>
+                            
+                       <strong class="color1">
+                    						The Companyname Inc
+                   				  </strong>                    
+                                  <p class="text">
+                         8901 Marmora Road,<br>
+Glasgow, D04 89GR.<br>
+Telephone: +1 800 123 1234<br>
+E-mail: <a href="#">www.copanyname.com</a>
+                                  </p>   
+                                  <div class="clear"></div>  
+                            
+                            
+                            </div>
+                          
+                          
+                          
+                          </div> 
+                          <div class="clear"></div>                         
+                          
+                          
+                         
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_PRIVACY">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                         
+                          
+                          <div class="col0">
+                           <h2>Privacy Policy</h2>
+          					<strong class="color1">
+                    	  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          
+                          
+                          </div>                          
+                          
+                          
+                          </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+                  <li id="page_MORE">                  
+                      <div class="box">
+                          <div class="relative">
+                          <div class="scroll">
+                          
+                         
+                          
+                          <div class="col0">
+                           <h2>More</h2>
+          					<strong class="color1">
+                    	  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          </strong>                    
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          <p class="text">
+                         Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+ <br><br>
+
+Vestibulum pede. Maecenas sit amet augue. Sed blandit lectus eget lectus. Mauris justo. Curabitur nibh lectus, dapibus id, tempor eu, tempor non, erat. Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. 
+                          </p>
+                          
+                          
+                          </div>                          
+                          
+                          
+                          </div>
+                          </div>
+
+                      </div>
+                  </li>
+                  
+                </ul>
+            </article>
+<!--content end -->            
+            
+
+</div>
+
+<div class="logo1">
+  <a href="index.html">
+    <div class="txt1">photo portfolio by</div>
+	<div class="txt2">Amanda Williams</div>
+  </a>
+</div>
+
+<div class="thumbvr">
+<ul>
+    <li><div class="photo1"><a href="images/slide01_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide01.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide02_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide02.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide03_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide03.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide04_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide04.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide05_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide05.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide06_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide06.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide07_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide07.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide08_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide08.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide09_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide09.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide10_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide10.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide11_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide11.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide12_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide12.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide13_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide13.jpg"><span></span></a></div></li>
+    <li><div class="photo1"><a href="images/slide14_big.jpg" rel="prettyPhoto[pp_gal1]" title="Photo Title"><img src="images/slide14.jpg"><span></span></a></div></li>
+          
+</ul>
+      </div>
+
+<div class="girl1"></div>
+
+</div>
+
+
+
+</div>
+<div class="block"></div>
+
+
+</div>
+<div class="bot1">
+<div class="bot2">
+<div class="copyright">  &nbsp;&nbsp;  &nbsp;&nbsp;   © 2012. All rights reserved.  &nbsp;&nbsp; | &nbsp;&nbsp;   <a href="#!/page_PRIVACY">Privacy policy</a></div>
+</div>
+<div class="bot3">
+<div class="tola left">
+                  
+                  <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+		<!-- Using the cssSelectorAncestor option with the default cssSelector class names to enable control association of standard functions using built in features -->
+
+		<div id="jp_container" class="jp-audio">
+        	<ul class="jp-controls">
+            
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"></a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"></a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume"></a></li>
+			</ul>            
+            <div class="jp-txt">SOUND CONTROL</div>            
+            <div class="jp-volume-bar"><div class="jp-volume-bar-value"></div></div>
+		</div>
+        </div>
+
+
+<div class="follow left">
+<span><a href="#" target="_blank"><img src="images/social_ic3.png" class="right"></a></span><span><a href="#" target="_blank"><img src="images/social_ic2.png" class="right"></a></span><span><a href="#" target="_blank"><img src="images/social_ic1.png" class="right"></a></span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+
+<script>
+$(window).load(function() {	
+	$('.spinner').fadeOut();
+	$('body').css({overflow:'inherit'});
+	var qwe = setTimeout(function () {$("#jquery_jplayer").jPlayer("play");}, 2000);
+})
+</script>
+</body>
+
+<!-- Mirrored from www.cbmcard.com/demo/HTML5/300111310/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2015 08:52:14 GMT -->
+</html>
